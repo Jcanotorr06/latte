@@ -11,4 +11,4 @@ Donde < archivo > es el archivo con el codigo a ejecutar
 2. lattelexer.py, archivo lexer del proyecto, contiene las definiciones de los tokens
 3. latteparser.py, archivo parser del proyecto, contiene las reglas gramaticales del lenguaje
 
-[Repositorio](https://www.github.com/Jcanotorr06/latte)
+## [Repositorio](https://www.github.com/Jcanotorr06/latte)
