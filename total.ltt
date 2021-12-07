@@ -1,0 +1,15 @@
+{   
+    print("Imprime el total de la suma de los elementos de un arreglo");
+    arreglo = [5,10,2,8,-4,3,14,22,8,1];
+    print(arreglo);
+    print("");
+    tam = 10;
+    i = 0;
+    total = 0;
+    while(i < tam){
+        total = total + arreglo[i];
+        i = i + 1;
+    }
+    print("Total: ");
+    print(total);
+}
