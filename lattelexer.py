@@ -27,26 +27,26 @@ tokens = reserved + (
 
 t_ASSIGN           = r'='
 t_COMMA            = r','
-t_GREATER          = r'>'   #22
-t_GREATEREQUAL     = r'>='    #21 
-t_NOTEQUAL         = r'<>'  #20 
-t_EQUAL            = r'==' #19
-t_LESSEQUAL        = r'<=' #18
-t_LESSTHAN         = r'<' #17
-t_CONS             = r'::' #13
-t_MINUS            = r'-' #11
-t_PLUS             = r'\+' #10
-t_INTDIV           = r'div' #8
-t_DIV              = r'/' #7
-t_MUL              = r'\*' #6
-t_EXPONENT         = r'\*\*' #5
-t_LBRACKET         = r'\[' #4
-t_RBRACKET         = r'\]' #4
+t_GREATER          = r'>'   
+t_GREATEREQUAL     = r'>='    
+t_NOTEQUAL         = r'<>'  
+t_EQUAL            = r'==' 
+t_LESSEQUAL        = r'<=' 
+t_LESSTHAN         = r'<' 
+t_CONS             = r'::' 
+t_MINUS            = r'-' 
+t_PLUS             = r'\+' 
+t_INTDIV           = r'div' 
+t_DIV              = r'/' 
+t_MUL              = r'\*' 
+t_EXPONENT         = r'\*\*' 
+t_LBRACKET         = r'\[' 
+t_RBRACKET         = r'\]' 
 t_LCURLY           = r'\{'
 t_RCURLY           = r'\}'
-t_TUPLINDEX        = r'\#' #3
-t_LPAREN           = r'\('  #1,2
-t_RPAREN           = r'\)' #1,2
+t_TUPLINDEX        = r'\#'
+t_LPAREN           = r'\(' 
+t_RPAREN           = r'\)'
 t_SEMI             = r';'
 t_ignore           = ' \t'
 
@@ -58,13 +58,11 @@ def t_REAL(t):
 
 def t_INT(t):
     r'[0-9]+'
-    #r'[-+]?[0-9]+'
     t.value = int(t.value)
     return t
 
 def t_STRING(t):
      r'(\"([^\"]|(\\.))*\")|((\'([^\"]|(\\.))*\'))'
-     #r'(?:\'|\").*(?:\'|\")'
      return t
 
 def t_BOOL(t):
@@ -85,10 +83,8 @@ def t_ID(t):
     return t
     
 def t_error(t):
-    #print("SYNTAX ERROR: %s at %d" % (t.value[0], t.lexer.lineno))
     error_syntax = 1
     return
-    #t.lexer.skip(1)
 
 lex.lex(debug = 0)
 
