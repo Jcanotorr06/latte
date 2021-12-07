@@ -10,8 +10,8 @@ logging.basicConfig(
  )
 log = logging.getLogger()
 
-variable = {};
-stack = [True];
+variable = {}
+stack = [True]
 
 def boolexpr(expr):
     if expr is None:
@@ -169,7 +169,7 @@ def p_boolexpr_andornot(p):
         else:
             pass
     except:
-            pass;
+            pass
             
 def p_boolexpr_paran(p):
     """
@@ -265,7 +265,7 @@ def p_expr_boolexpr(p):
         
     global error_semantic
     result = boolexpr(p[1])
-    p[0] = result;
+    p[0] = result
     return p[1]
 
 def p_expr_id(p):
@@ -411,7 +411,7 @@ def p_expr_cons(p):
     global error_semantic
     try:
         if isinstance(p[3], list):
-            p[0] = [p[1]] + p[3];
+            p[0] = [p[1]] + p[3]
     except:
         pass
 
@@ -426,7 +426,7 @@ def p_expr_tupleindex(p):
         if isinstance(p[2], int) == False or isinstance(p[3], tuple) == False:
             pass
         else:
-            p[0] = p[3][p[1] + 1];
+            p[0] = p[3][p[1] + 1]
     except:
         pass
 
@@ -456,8 +456,8 @@ def p_expr_list_assign_id(p):
     
     lval = variable.get(p[1])
     rval = variable.get(p[6])
-    lval[p[3]] = rval;
-    variable[p[1]] = lval;
+    lval[p[3]] = rval
+    variable[p[1]] = lval
     p[0] = rval
 
 def p_expr_list_assign_list(p):
@@ -473,9 +473,9 @@ def p_expr_list_assign_list(p):
     #print(p[6])
     lval = variable.get(p[1])
     rval = p[6]
-    lval[p[3]] = p[6];
-    variable[p[1]] = lval;
-    p[0] = p[6];
+    lval[p[3]] = p[6]
+    variable[p[1]] = lval
+    p[0] = p[6]
     
 def p_expr_id_assign_list(p):
     """
@@ -487,7 +487,7 @@ def p_expr_id_assign_list(p):
     lval = variable.get(p[1])
     rval = p[3]
     lval = rval
-    variable[p[1]] = lval;
+    variable[p[1]] = lval
     p[0] = p[3]
     
 def p_expr_listval(p):
@@ -603,15 +603,14 @@ def p_empty(p):
      pass
  
 def p_error(p):
-    global error_semantic;
-    error_semantic = 1;
+    global error_semantic
+    error_semantic = 1
 
 parser = yacc.yacc(debuglog=log)
 def mainHW3(filepath):
     global error_semantic
     global error_syntax
     for line in open('inputfile.txt','r').readlines():
-            #print(line)
             try:
                 result = parser.parse(line, debug = 0)
                 if error_semantic == 1:
@@ -621,12 +620,11 @@ def mainHW3(filepath):
                     print("SYNTAX ERROR")
                     error_syntax = 0
                 elif result != None:
-                    print(result);
+                    print(result)
                 elif result == None:
                     print("SYNTAX ERROR")
             except:
                 pass
-                #print("SYNTAX ERROR")
 
 def mainHW4(filepath):
     global parser
@@ -635,9 +633,7 @@ def mainHW4(filepath):
     with open(filepath, 'r') as file:
        program = file.read().replace('\n', ' ')
      
-    #print(program)
-    parser.parse(program, debug = log );
-    #print(error_semantic)
+    parser.parse(program, debug = log )
     if error_semantic > 0:
         print('SEMANTIC ERROR')
     if error_syntax > 0:
