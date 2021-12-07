@@ -4,7 +4,7 @@
 pip3 install ply
 python3 latte.py <nombre_archivo>
 ```
-Donde <archivo> es el archivo con el codigo a ejecutar
+Donde <<archivo>> es el archivo con el codigo a ejecutar
 
 ##Estructura del proyecto
 1. latte.py, archivo principal del proyecto
