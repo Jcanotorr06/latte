@@ -1,0 +1,13 @@
+{
+    inicio = 1;
+    fin = 100;
+
+    print("Numeros pares entre los limites definidos");
+
+    while(inicio <= fin) {
+        if((inicio mod 2) == 0){
+            print(inicio);
+        }
+        inicio = inicio + 1;
+    }
+}
