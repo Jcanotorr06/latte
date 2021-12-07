@@ -39,10 +39,8 @@ precedence = (
     ('left', 'PLUS', 'MINUS'),
     ('left', 'MUL', 'DIV', 'INTDIV', 'MOD'),
     ('right', 'EXPONENT'),
-    #('right', 'LBRACKET','RBRACKET'),
     )
 
-# Program's starting point
 
 def p_start(p):
     '''
@@ -102,10 +100,8 @@ def p_ifStart(p):
     ifStart :
     """
     global stack
-    # If current state is not running
     if not stack[-1]:
         stack.append(False)
-    # Push evaluated value as running state
     else:
         stack.append(p[-3])
         
@@ -121,7 +117,6 @@ def p_ifElseStart(p):
     ifElseStart :
     """
     global stack
-    # If current state is not running
     if not stack[-1]:
         stack.append(False)
     else:
@@ -211,7 +206,6 @@ def p_boolexpr_comparison(p):
         return
     
     try:
-        #print(p[1], p[3])
         if  p[2] == '<':
             p[0] = p[1] < p[3]
         elif p[2] == '<=':
@@ -227,8 +221,6 @@ def p_boolexpr_comparison(p):
         else:
             p[0] = None
     except Exception as e: 
-        #print(e);
-        #pass
         global error_semantic
         error_semantic = error_semantic + 1
 
@@ -261,7 +253,6 @@ def p_expr_binop(p):
                 elif p[2] == 'div':
                     p[0] = int(p[1]/p[3])
     except Exception  as e:
-        #print(e)
         global error_semantic
         error_semantic = error_semantic + 1
         
@@ -286,13 +277,11 @@ def p_expr_id(p):
         
     global variable
     value = variable.get(p[1])
-    #print(value)
     if value is not None:
         p[0] = value
         return value
     else:
         return None
-    #print(p[1], value)
 
 def p_boolexpr_id(p):
     """
