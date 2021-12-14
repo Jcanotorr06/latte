@@ -34,7 +34,7 @@ precedence = (
     ('left','ANDALSO'),
     ('left','NOT'),
     ('left','LESSTHAN', 'LESSEQUAL', 'EQUAL', 'NOTEQUAL', 'GREATEREQUAL', 'GREATER'),
-    ('right', 'CONS', 'IN'),
+    ('right', 'CONC', 'IN'),
     ('right','UMINUS'),
     ('left', 'PLUS', 'MINUS'),
     ('left', 'MUL', 'DIV', 'INTDIV', 'MOD'),
@@ -248,7 +248,7 @@ def p_expr_binop(p):
                     p[0] = p[1] / p[3]
                 elif p[2] == '**':
                     p[0] = p[1] ** p[3]
-                elif p[2] == 'mod':
+                elif p[2] == '%':
                     p[0] = p[1] % p[3]
                 elif p[2] == 'div':
                     p[0] = int(p[1]/p[3])
@@ -402,16 +402,16 @@ def p_expr_membership(p):
    except:
        error_semantic = error_semantic + 1
 
-def p_expr_cons(p):
+def p_expr_conc(p):
     '''
-    expr : expr CONS expr
+    expr : expr CONC expr
     '''
     if not stack[-1]:
             return
     global error_semantic
     try:
         if isinstance(p[3], list):
-            p[0] = [p[1]] + p[3]
+            p[0] = [*p[1], *p[3]]
     except:
         pass
 

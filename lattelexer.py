@@ -5,24 +5,13 @@ import ply.lex as lex
 error_semantic = 0
 error_syntax  = 0
 
-reserved = ('IF', 'ELSE', 'WHILE', 'PRINT', 'ANDALSO', 'ORELSE', 'NOT', 'IN', 'MOD')
+reserved = ('IF', 'ELSE', 'WHILE', 'PRINT', 'ANDALSO', 'ORELSE', 'NOT', 'IN')
 tokens = reserved + (
-    # >, >=, <>, ==, <=, <, andalso, orelse, ~, ::, member
     'ID', 'GREATER', 'GREATEREQUAL', 'NOTEQUAL', 'EQUAL',         
-    'LESSEQUAL', 'LESSTHAN',   
-     'CONS', 
-    #+, -, %, /, int div, *, **
-    'MINUS', 'PLUS', 'INTDIV', 'DIV', 
-    'MUL', 'EXPONENT', 
-
-    #[ ], #, ( )
-    'LBRACKET', 'RBRACKET', 'TUPLINDEX', 'LPAREN','RPAREN', 'LCURLY', 'RCURLY',     
-
-    #data types
-    'INT', 'REAL', 'STRING', 'BOOL',
-    #;
-    'SEMI', 'COMMA',
-    'ASSIGN',
+    'LESSEQUAL', 'LESSTHAN','CONC', 'MINUS', 'PLUS', 'INTDIV', 'DIV', 'MOD',
+    'MUL', 'EXPONENT', 'LBRACKET', 'RBRACKET', 'TUPLINDEX', 'LPAREN',
+    'RPAREN', 'LCURLY', 'RCURLY', 'INT', 'REAL', 'STRING', 'BOOL',
+    'SEMI', 'COMMA', 'ASSIGN',
 )
 
 t_ASSIGN           = r'='
@@ -33,11 +22,12 @@ t_NOTEQUAL         = r'<>'
 t_EQUAL            = r'==' 
 t_LESSEQUAL        = r'<=' 
 t_LESSTHAN         = r'<' 
-t_CONS             = r'::' 
+t_CONC             = r'::' 
 t_MINUS            = r'-' 
 t_PLUS             = r'\+' 
 t_INTDIV           = r'div' 
-t_DIV              = r'/' 
+t_DIV              = r'/'
+t_MOD              = r'\%' 
 t_MUL              = r'\*' 
 t_EXPONENT         = r'\*\*' 
 t_LBRACKET         = r'\[' 
