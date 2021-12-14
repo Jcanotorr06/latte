@@ -7,11 +7,11 @@
    yacc.py: 506:Result : <int @ 0x956aa0> (100)
    yacc.py: 469:Action : Reduce rule [expr -> ID ASSIGN expr] with ['fin','=',100] and goto state 5
    yacc.py: 506:Result : <int @ 0x956aa0> (100)
-   yacc.py: 469:Action : Reduce rule [expr -> STRING] with [<str @ 0x7f95eb996750>] and goto state 91
-   yacc.py: 506:Result : <str @ 0x7f95eb98bcf0> ('Numeros pares entre los limites definid ...)
-   yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [<str @ 0x7f95eb98bcf0>] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb98bcf0> ('Numeros pares entre los limites definid ...)
-   yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(',<str @ 0x7f95eb98bcf0>,')',';'] and goto state 4
+   yacc.py: 469:Action : Reduce rule [expr -> STRING] with [<str @ 0x7f3b8c5415d0>] and goto state 91
+   yacc.py: 506:Result : <str @ 0x7f3b8c536b70> ('Numeros pares entre los limites definid ...)
+   yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [<str @ 0x7f3b8c536b70>] and goto state 90
+   yacc.py: 506:Result : <str @ 0x7f3b8c536b70> ('Numeros pares entre los limites definid ...)
+   yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(',<str @ 0x7f3b8c536b70>,')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -25,7 +25,7 @@
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [1,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [1,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -79,7 +79,7 @@
    yacc.py: 506:Result : <int @ 0x955e60> (2)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [2,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [2,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -92,7 +92,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x955e60> (2)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [2] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918ab0> ('2')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7730> ('2')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','2',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -133,7 +133,7 @@
    yacc.py: 506:Result : <int @ 0x955e80> (3)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [3,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [3,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -187,7 +187,7 @@
    yacc.py: 506:Result : <int @ 0x955ea0> (4)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [4,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [4,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -200,7 +200,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x955ea0> (4)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [4] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918930> ('4')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7c30> ('4')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','4',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -241,7 +241,7 @@
    yacc.py: 506:Result : <int @ 0x955ec0> (5)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [5,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [5,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -295,7 +295,7 @@
    yacc.py: 506:Result : <int @ 0x955ee0> (6)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [6,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [6,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -308,7 +308,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x955ee0> (6)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [6] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918c30> ('6')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7b70> ('6')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','6',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -349,7 +349,7 @@
    yacc.py: 506:Result : <int @ 0x955f00> (7)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [7,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [7,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -403,7 +403,7 @@
    yacc.py: 506:Result : <int @ 0x955f20> (8)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [8,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [8,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -416,7 +416,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x955f20> (8)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [8] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb9189f0> ('8')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7db0> ('8')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','8',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -457,7 +457,7 @@
    yacc.py: 506:Result : <int @ 0x955f40> (9)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [9,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [9,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -511,7 +511,7 @@
    yacc.py: 506:Result : <int @ 0x955f60> (10)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [10,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [10,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -524,7 +524,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x955f60> (10)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [10] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918c30> ('10')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7e30> ('10')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','10',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -565,7 +565,7 @@
    yacc.py: 506:Result : <int @ 0x955f80> (11)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [11,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [11,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -619,7 +619,7 @@
    yacc.py: 506:Result : <int @ 0x955fa0> (12)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [12,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [12,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -632,7 +632,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x955fa0> (12)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [12] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918bf0> ('12')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7eb0> ('12')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','12',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -673,7 +673,7 @@
    yacc.py: 506:Result : <int @ 0x955fc0> (13)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [13,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [13,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -727,7 +727,7 @@
    yacc.py: 506:Result : <int @ 0x955fe0> (14)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [14,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [14,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -740,7 +740,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x955fe0> (14)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [14] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918670> ('14')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7f30> ('14')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','14',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -781,7 +781,7 @@
    yacc.py: 506:Result : <int @ 0x956000> (15)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [15,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [15,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -835,7 +835,7 @@
    yacc.py: 506:Result : <int @ 0x956020> (16)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [16,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [16,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -848,7 +848,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956020> (16)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [16] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918ef0> ('16')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7fb0> ('16')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','16',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -889,7 +889,7 @@
    yacc.py: 506:Result : <int @ 0x956040> (17)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [17,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [17,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -943,7 +943,7 @@
    yacc.py: 506:Result : <int @ 0x956060> (18)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [18,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [18,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -956,7 +956,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956060> (18)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [18] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918bf0> ('18')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7ab0> ('18')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','18',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -997,7 +997,7 @@
    yacc.py: 506:Result : <int @ 0x956080> (19)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [19,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [19,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -1051,7 +1051,7 @@
    yacc.py: 506:Result : <int @ 0x9560a0> (20)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [20,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [20,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -1064,7 +1064,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9560a0> (20)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [20] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918ef0> ('20')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7eb0> ('20')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','20',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -1105,7 +1105,7 @@
    yacc.py: 506:Result : <int @ 0x9560c0> (21)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [21,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [21,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -1159,7 +1159,7 @@
    yacc.py: 506:Result : <int @ 0x9560e0> (22)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [22,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [22,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -1172,7 +1172,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9560e0> (22)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [22] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918bf0> ('22')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7d70> ('22')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','22',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -1213,7 +1213,7 @@
    yacc.py: 506:Result : <int @ 0x956100> (23)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [23,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [23,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -1267,7 +1267,7 @@
    yacc.py: 506:Result : <int @ 0x956120> (24)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [24,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [24,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -1280,7 +1280,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956120> (24)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [24] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918e70> ('24')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7f30> ('24')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','24',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -1321,7 +1321,7 @@
    yacc.py: 506:Result : <int @ 0x956140> (25)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [25,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [25,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -1375,7 +1375,7 @@
    yacc.py: 506:Result : <int @ 0x956160> (26)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [26,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [26,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -1388,7 +1388,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956160> (26)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [26] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918ef0> ('26')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7eb0> ('26')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','26',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -1429,7 +1429,7 @@
    yacc.py: 506:Result : <int @ 0x956180> (27)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [27,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [27,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -1483,7 +1483,7 @@
    yacc.py: 506:Result : <int @ 0x9561a0> (28)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [28,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [28,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -1496,7 +1496,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9561a0> (28)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [28] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918bf0> ('28')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7d70> ('28')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','28',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -1537,7 +1537,7 @@
    yacc.py: 506:Result : <int @ 0x9561c0> (29)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [29,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [29,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -1591,7 +1591,7 @@
    yacc.py: 506:Result : <int @ 0x9561e0> (30)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [30,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [30,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -1604,7 +1604,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9561e0> (30)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [30] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918e70> ('30')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7f30> ('30')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','30',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -1645,7 +1645,7 @@
    yacc.py: 506:Result : <int @ 0x956200> (31)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [31,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [31,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -1699,7 +1699,7 @@
    yacc.py: 506:Result : <int @ 0x956220> (32)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [32,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [32,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -1712,7 +1712,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956220> (32)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [32] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918ef0> ('32')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7eb0> ('32')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','32',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -1753,7 +1753,7 @@
    yacc.py: 506:Result : <int @ 0x956240> (33)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [33,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [33,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -1807,7 +1807,7 @@
    yacc.py: 506:Result : <int @ 0x956260> (34)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [34,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [34,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -1820,7 +1820,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956260> (34)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [34] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918bf0> ('34')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7d70> ('34')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','34',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -1861,7 +1861,7 @@
    yacc.py: 506:Result : <int @ 0x956280> (35)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [35,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [35,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -1915,7 +1915,7 @@
    yacc.py: 506:Result : <int @ 0x9562a0> (36)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [36,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [36,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -1928,7 +1928,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9562a0> (36)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [36] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918e70> ('36')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7f30> ('36')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','36',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -1969,7 +1969,7 @@
    yacc.py: 506:Result : <int @ 0x9562c0> (37)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [37,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [37,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -2023,7 +2023,7 @@
    yacc.py: 506:Result : <int @ 0x9562e0> (38)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [38,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [38,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -2036,7 +2036,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9562e0> (38)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [38] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918ef0> ('38')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7eb0> ('38')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','38',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -2077,7 +2077,7 @@
    yacc.py: 506:Result : <int @ 0x956300> (39)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [39,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [39,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -2131,7 +2131,7 @@
    yacc.py: 506:Result : <int @ 0x956320> (40)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [40,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [40,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -2144,7 +2144,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956320> (40)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [40] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918bf0> ('40')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7d70> ('40')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','40',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -2185,7 +2185,7 @@
    yacc.py: 506:Result : <int @ 0x956340> (41)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [41,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [41,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -2239,7 +2239,7 @@
    yacc.py: 506:Result : <int @ 0x956360> (42)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [42,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [42,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -2252,7 +2252,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956360> (42)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [42] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918e70> ('42')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7f30> ('42')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','42',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -2293,7 +2293,7 @@
    yacc.py: 506:Result : <int @ 0x956380> (43)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [43,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [43,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -2347,7 +2347,7 @@
    yacc.py: 506:Result : <int @ 0x9563a0> (44)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [44,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [44,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -2360,7 +2360,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9563a0> (44)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [44] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918ef0> ('44')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7eb0> ('44')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','44',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -2401,7 +2401,7 @@
    yacc.py: 506:Result : <int @ 0x9563c0> (45)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [45,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [45,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -2455,7 +2455,7 @@
    yacc.py: 506:Result : <int @ 0x9563e0> (46)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [46,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [46,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -2468,7 +2468,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9563e0> (46)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [46] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918bf0> ('46')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7d70> ('46')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','46',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -2509,7 +2509,7 @@
    yacc.py: 506:Result : <int @ 0x956400> (47)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [47,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [47,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -2563,7 +2563,7 @@
    yacc.py: 506:Result : <int @ 0x956420> (48)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [48,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [48,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -2576,7 +2576,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956420> (48)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [48] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918e70> ('48')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7f30> ('48')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','48',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -2617,7 +2617,7 @@
    yacc.py: 506:Result : <int @ 0x956440> (49)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [49,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [49,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -2671,7 +2671,7 @@
    yacc.py: 506:Result : <int @ 0x956460> (50)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [50,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [50,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -2684,7 +2684,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956460> (50)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [50] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918ef0> ('50')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7eb0> ('50')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','50',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -2725,7 +2725,7 @@
    yacc.py: 506:Result : <int @ 0x956480> (51)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [51,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [51,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -2779,7 +2779,7 @@
    yacc.py: 506:Result : <int @ 0x9564a0> (52)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [52,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [52,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -2792,7 +2792,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9564a0> (52)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [52] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918bf0> ('52')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7d70> ('52')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','52',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -2833,7 +2833,7 @@
    yacc.py: 506:Result : <int @ 0x9564c0> (53)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [53,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [53,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -2887,7 +2887,7 @@
    yacc.py: 506:Result : <int @ 0x9564e0> (54)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [54,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [54,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -2900,7 +2900,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9564e0> (54)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [54] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918e70> ('54')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7f30> ('54')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','54',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -2941,7 +2941,7 @@
    yacc.py: 506:Result : <int @ 0x956500> (55)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [55,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [55,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -2995,7 +2995,7 @@
    yacc.py: 506:Result : <int @ 0x956520> (56)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [56,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [56,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -3008,7 +3008,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956520> (56)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [56] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918ef0> ('56')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7eb0> ('56')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','56',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -3049,7 +3049,7 @@
    yacc.py: 506:Result : <int @ 0x956540> (57)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [57,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [57,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -3103,7 +3103,7 @@
    yacc.py: 506:Result : <int @ 0x956560> (58)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [58,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [58,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -3116,7 +3116,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956560> (58)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [58] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918bf0> ('58')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7d70> ('58')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','58',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -3157,7 +3157,7 @@
    yacc.py: 506:Result : <int @ 0x956580> (59)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [59,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [59,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -3211,7 +3211,7 @@
    yacc.py: 506:Result : <int @ 0x9565a0> (60)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [60,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [60,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -3224,7 +3224,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9565a0> (60)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [60] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918e70> ('60')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7f30> ('60')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','60',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -3265,7 +3265,7 @@
    yacc.py: 506:Result : <int @ 0x9565c0> (61)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [61,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [61,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -3319,7 +3319,7 @@
    yacc.py: 506:Result : <int @ 0x9565e0> (62)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [62,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [62,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -3332,7 +3332,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9565e0> (62)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [62] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918ef0> ('62')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7eb0> ('62')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','62',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -3373,7 +3373,7 @@
    yacc.py: 506:Result : <int @ 0x956600> (63)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [63,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [63,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -3427,7 +3427,7 @@
    yacc.py: 506:Result : <int @ 0x956620> (64)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [64,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [64,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -3440,7 +3440,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956620> (64)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [64] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918bf0> ('64')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7d70> ('64')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','64',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -3481,7 +3481,7 @@
    yacc.py: 506:Result : <int @ 0x956640> (65)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [65,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [65,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -3535,7 +3535,7 @@
    yacc.py: 506:Result : <int @ 0x956660> (66)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [66,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [66,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -3548,7 +3548,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956660> (66)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [66] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918e70> ('66')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7f30> ('66')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','66',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -3589,7 +3589,7 @@
    yacc.py: 506:Result : <int @ 0x956680> (67)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [67,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [67,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -3643,7 +3643,7 @@
    yacc.py: 506:Result : <int @ 0x9566a0> (68)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [68,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [68,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -3656,7 +3656,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9566a0> (68)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [68] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918ef0> ('68')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7eb0> ('68')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','68',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -3697,7 +3697,7 @@
    yacc.py: 506:Result : <int @ 0x9566c0> (69)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [69,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [69,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -3751,7 +3751,7 @@
    yacc.py: 506:Result : <int @ 0x9566e0> (70)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [70,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [70,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -3764,7 +3764,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9566e0> (70)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [70] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918bf0> ('70')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7d70> ('70')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','70',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -3805,7 +3805,7 @@
    yacc.py: 506:Result : <int @ 0x956700> (71)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [71,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [71,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -3859,7 +3859,7 @@
    yacc.py: 506:Result : <int @ 0x956720> (72)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [72,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [72,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -3872,7 +3872,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956720> (72)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [72] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918e70> ('72')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7f30> ('72')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','72',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -3913,7 +3913,7 @@
    yacc.py: 506:Result : <int @ 0x956740> (73)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [73,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [73,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -3967,7 +3967,7 @@
    yacc.py: 506:Result : <int @ 0x956760> (74)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [74,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [74,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -3980,7 +3980,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956760> (74)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [74] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918ef0> ('74')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4c7f30> ('74')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','74',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -4021,7 +4021,7 @@
    yacc.py: 506:Result : <int @ 0x956780> (75)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [75,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [75,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -4075,7 +4075,7 @@
    yacc.py: 506:Result : <int @ 0x9567a0> (76)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [76,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [76,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -4088,7 +4088,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9567a0> (76)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [76] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918bf0> ('76')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4cfeb0> ('76')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','76',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -4129,7 +4129,7 @@
    yacc.py: 506:Result : <int @ 0x9567c0> (77)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [77,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [77,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -4183,7 +4183,7 @@
    yacc.py: 506:Result : <int @ 0x9567e0> (78)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [78,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [78,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -4196,7 +4196,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9567e0> (78)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [78] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb918ef0> ('78')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4cfeb0> ('78')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','78',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -4237,7 +4237,7 @@
    yacc.py: 506:Result : <int @ 0x956800> (79)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [79,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [79,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -4291,7 +4291,7 @@
    yacc.py: 506:Result : <int @ 0x956820> (80)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [80,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [80,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -4304,7 +4304,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956820> (80)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [80] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb9240b0> ('80')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4cfeb0> ('80')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','80',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -4345,7 +4345,7 @@
    yacc.py: 506:Result : <int @ 0x956840> (81)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [81,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [81,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -4399,7 +4399,7 @@
    yacc.py: 506:Result : <int @ 0x956860> (82)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [82,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [82,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -4412,7 +4412,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956860> (82)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [82] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb9240b0> ('82')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4cfeb0> ('82')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','82',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -4453,7 +4453,7 @@
    yacc.py: 506:Result : <int @ 0x956880> (83)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [83,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [83,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -4507,7 +4507,7 @@
    yacc.py: 506:Result : <int @ 0x9568a0> (84)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [84,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [84,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -4520,7 +4520,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9568a0> (84)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [84] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb9240b0> ('84')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4cfeb0> ('84')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','84',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -4561,7 +4561,7 @@
    yacc.py: 506:Result : <int @ 0x9568c0> (85)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [85,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [85,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -4615,7 +4615,7 @@
    yacc.py: 506:Result : <int @ 0x9568e0> (86)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [86,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [86,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -4628,7 +4628,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9568e0> (86)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [86] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb9240b0> ('86')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4cfeb0> ('86')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','86',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -4669,7 +4669,7 @@
    yacc.py: 506:Result : <int @ 0x956900> (87)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [87,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [87,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -4723,7 +4723,7 @@
    yacc.py: 506:Result : <int @ 0x956920> (88)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [88,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [88,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -4736,7 +4736,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956920> (88)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [88] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb9240b0> ('88')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4cfeb0> ('88')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','88',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -4777,7 +4777,7 @@
    yacc.py: 506:Result : <int @ 0x956940> (89)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [89,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [89,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -4831,7 +4831,7 @@
    yacc.py: 506:Result : <int @ 0x956960> (90)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [90,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [90,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -4844,7 +4844,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956960> (90)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [90] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb9240b0> ('90')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4cfeb0> ('90')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','90',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -4885,7 +4885,7 @@
    yacc.py: 506:Result : <int @ 0x956980> (91)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [91,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [91,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -4939,7 +4939,7 @@
    yacc.py: 506:Result : <int @ 0x9569a0> (92)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [92,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [92,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -4952,7 +4952,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9569a0> (92)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [92] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb9240b0> ('92')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4cfeb0> ('92')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','92',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -4993,7 +4993,7 @@
    yacc.py: 506:Result : <int @ 0x9569c0> (93)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [93,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [93,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -5047,7 +5047,7 @@
    yacc.py: 506:Result : <int @ 0x9569e0> (94)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [94,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [94,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -5060,7 +5060,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x9569e0> (94)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [94] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb9240b0> ('94')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4cfeb0> ('94')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','94',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -5101,7 +5101,7 @@
    yacc.py: 506:Result : <int @ 0x956a00> (95)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [95,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [95,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -5155,7 +5155,7 @@
    yacc.py: 506:Result : <int @ 0x956a20> (96)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [96,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [96,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -5168,7 +5168,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956a20> (96)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [96] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb9240b0> ('96')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4cfeb0> ('96')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','96',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -5209,7 +5209,7 @@
    yacc.py: 506:Result : <int @ 0x956a40> (97)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [97,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [97,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -5263,7 +5263,7 @@
    yacc.py: 506:Result : <int @ 0x956a60> (98)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [98,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [98,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -5276,7 +5276,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956a60> (98)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [98] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb9240b0> ('98')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4cfeb0> ('98')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','98',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -5317,7 +5317,7 @@
    yacc.py: 506:Result : <int @ 0x956a80> (99)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [99,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [99,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e40> (1)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',1,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e40> (1)
@@ -5371,7 +5371,7 @@
    yacc.py: 506:Result : <int @ 0x956aa0> (100)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <int @ 0x955e60> (2)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [100,'mod',2] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [100,'%',2] and goto state 110
    yacc.py: 506:Result : <int @ 0x955e20> (0)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',0,')'] and goto state 98
    yacc.py: 506:Result : <int @ 0x955e20> (0)
@@ -5384,7 +5384,7 @@
    yacc.py: 469:Action : Reduce rule [expr -> ID] with ['inicio'] and goto state 91
    yacc.py: 506:Result : <int @ 0x956aa0> (100)
    yacc.py: 469:Action : Reduce rule [print_arguments -> expr] with [100] and goto state 90
-   yacc.py: 506:Result : <str @ 0x7f95eb9240b0> ('100')
+   yacc.py: 506:Result : <str @ 0x7f3b8c4cfeb0> ('100')
    yacc.py: 469:Action : Reduce rule [stmt -> PRINT LPAREN print_arguments RPAREN SEMI] with ['print','(','100',')',';'] and goto state 4
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 473:Action : Reduce rule [program -> <empty>] with [] and goto state 26
@@ -5425,7 +5425,7 @@
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 469:Action : Reduce rule [expr -> INT] with [2] and goto state 76
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
-   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [None,'mod',None] and goto state 110
+   yacc.py: 469:Action : Reduce rule [expr -> expr MOD expr] with [None,'%',None] and goto state 110
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)
    yacc.py: 469:Action : Reduce rule [expr -> LPAREN expr RPAREN] with ['(',None,')'] and goto state 98
    yacc.py: 506:Result : <NoneType @ 0x90ba10> (None)

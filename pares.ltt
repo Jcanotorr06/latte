@@ -5,7 +5,7 @@
     print("Numeros pares entre los limites definidos");
 
     while(inicio <= fin) {
-        if((inicio mod 2) == 0){
+        if((inicio % 2) == 0){
             print(inicio);
         }
         inicio = inicio + 1;
